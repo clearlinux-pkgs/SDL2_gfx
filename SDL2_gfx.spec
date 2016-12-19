@@ -4,7 +4,7 @@
 #
 Name     : SDL2_gfx
 Version  : 1.0.1
-Release  : 4
+Release  : 5
 URL      : http://www.ferzkopp.net/Software/SDL2_gfx/SDL2_gfx-1.0.1.tar.gz
 Source0  : http://www.ferzkopp.net/Software/SDL2_gfx/SDL2_gfx-1.0.1.tar.gz
 Summary  : drawing and graphical effects extension for SDL
@@ -37,14 +37,15 @@ lib components for the SDL2_gfx package.
 
 
 %prep
-cd ..
 %setup -q -n SDL2_gfx-1.0.1
 
 %build
+export LANG=C
 %configure --disable-static
 make V=1  %{?_smp_mflags}
 
 %check
+export LANG=C
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost
@@ -63,9 +64,10 @@ rm -rf %{buildroot}
 /usr/include/SDL2/SDL2_gfxPrimitives.h
 /usr/include/SDL2/SDL2_imageFilter.h
 /usr/include/SDL2/SDL2_rotozoom.h
-/usr/lib64/*.so
-/usr/lib64/pkgconfig/*.pc
+/usr/lib64/libSDL2_gfx.so
+/usr/lib64/pkgconfig/SDL2_gfx.pc
 
 %files lib
 %defattr(-,root,root,-)
-/usr/lib64/*.so.*
+/usr/lib64/libSDL2_gfx-1.0.so.0
+/usr/lib64/libSDL2_gfx-1.0.so.0.0.1
