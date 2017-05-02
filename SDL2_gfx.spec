@@ -4,7 +4,7 @@
 #
 Name     : SDL2_gfx
 Version  : 1.0.1
-Release  : 6
+Release  : 7
 URL      : http://www.ferzkopp.net/Software/SDL2_gfx/SDL2_gfx-1.0.1.tar.gz
 Source0  : http://www.ferzkopp.net/Software/SDL2_gfx/SDL2_gfx-1.0.1.tar.gz
 Summary  : drawing and graphical effects extension for SDL
