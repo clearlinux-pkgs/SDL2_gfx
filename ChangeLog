@@ -1,5 +1,30 @@
 SDL2_gfx ChangeLog
 
+Mon, Feb 20, 2017  9:04:29 PM
+- version rev to 1.0.3
+- updates to VS solution
+- update README for VS2015
+- fix to rotozoomSurfaceSizeTrig (thanks hydren)
+- fix for special case of roundedBoxRGBA (thanks LukeMS)
+
+Thu, Dec 10, 2015  8:11:26 AM
+- added XCode.zip (thanks Matthias for contributing)
+
+Sun, Jul 13, 2014  9:21:00 AM
+- added TestFramerate
+
+Fri, Jul 11, 2014  7:33:12 PM
+- rewrote thick line algorithm using polygon drawing (much less
+  code and faster than original Murphy-Bresenham algorithm)
+- update TestThickLine accuracy test in TestGfx
+- update file headers
+
+Fri, Jul 04, 2014  4:00:21 PM
+- rewrote ellipse algorithm used by non-AA line/filled circle/ellipse functions:
+  integer midpoint algorithm with 4x overscan for visual accuracy
+- fix bugs in TestGfx
+- add screenshot image
+
 Sun, Jun 15, 2014  3:12:31 PM
 - fixed roundedBox by rewriting algorithm and base it on filledCircle
 - fixed textured polygon algorithm
